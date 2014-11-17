@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52F210DD2DBDF9229C853BF8 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B863E6CBE4E80A5A22A40201 /* libPods-Tests.a */; };
+		ABC3503CAF484A4F0CFDAF37 /* FXModelInlineValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35078A1F7C25DBAA6CDD2 /* FXModelInlineValidatorTests.m */; };
+		ABC350C46126614B4E1FD022 /* FXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35AC6EBBBFCE448A2BEA8 /* FXModel.m */; };
+		ABC3512601F6166BDDB90AA9 /* FXModelRangeValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC358DBF0A2D73DA773655F /* FXModelRangeValidatorTests.m */; };
+		ABC3512DB18DD08C74A9B8DF /* FXModelStringValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3501C4AA3A407BDB1F071 /* FXModelStringValidatorTests.m */; };
+		ABC35201645E0C7466BAAA14 /* NSObject+FXModelValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC359E62D542FC03892D09D /* NSObject+FXModelValidation.m */; };
+		ABC35262BB77B35CA13DFA68 /* FXModelEmailValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3550A763BC787B934CC70 /* FXModelEmailValidatorTests.m */; };
+		ABC3535CFC2C9A5DA94DF79E /* FXModelDefaultValueValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35836602679702FF2CA5D /* FXModelDefaultValueValidatorTests.m */; };
+		ABC3537054C9BBC2F2B57CDE /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC356FA0400B40F99D6F6F6 /* ModelTests.m */; };
+		ABC353765B9F8B61BCF8E3FC /* FXModelValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35ABE89EC437D9E082E5F /* FXModelValidator.m */; };
+		ABC353F871F6A860B2838DF6 /* FXModelEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3510FD4779F9997AE4AB8 /* FXModelEmailValidator.m */; };
+		ABC3545D8E1C239FF550B2A7 /* FXModelFilterValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3513F6DF3A363FBBB4757 /* FXModelFilterValidatorTests.m */; };
+		ABC354DD8A5B079725C1A8E1 /* FXModelFilterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35F0D93C52B1EFF38596E /* FXModelFilterValidator.m */; };
+		ABC354E1BB33A6BDF8ACBAA0 /* FXModelNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35ECFBD1A146653618FAB /* FXModelNumberValidator.m */; };
+		ABC355EB45C43F6670C048CA /* FXModelRegExpValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35D0E1C0FD206130C5B34 /* FXModelRegExpValidatorTests.m */; };
+		ABC35655B74F479089A9945A /* FXModelTrimFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35B6F1642D44EB1A8A898 /* FXModelTrimFilter.m */; };
+		ABC35692B7EA7B468008AB0D /* FXModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35C1ECBFC05AA2BFC1C87 /* FXModelTests.m */; };
+		ABC356BCBA0486C21115F11A /* FXModelRangeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35D46E3679A75E7F30247 /* FXModelRangeValidator.m */; };
+		ABC356CC00CA13C2F79F6EEB /* FXModelSafeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35ABADF20A01F792D9CF6 /* FXModelSafeValidator.m */; };
+		ABC357047986BA34C2E691AB /* FXModelSafeValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35E1333A0DCF6DC937422 /* FXModelSafeValidatorTests.m */; };
+		ABC357603B339981A5BED068 /* FXModelNumberValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3574B2848C8354E4D93E5 /* FXModelNumberValidatorTests.m */; };
+		ABC357A677D9B60A05AA5E9B /* FXModelUrlValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35686E1EA9FB83A58EC17 /* FXModelUrlValidator.m */; };
+		ABC358228B723DD8C2C5D7D7 /* FXModelUrlValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A4BFB195EB6AA6A18EB /* FXModelUrlValidatorTests.m */; };
+		ABC35832FEAFB1D6D9E00DBC /* FXModelDefaultValueValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35D7521136DC812079699 /* FXModelDefaultValueValidator.m */; };
+		ABC3583FF92D67CA38462FD9 /* FXModelCompareValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A3A341530EE5F77926F /* FXModelCompareValidator.m */; };
+		ABC3584E6C9ED68A22E92863 /* FXModelRequiredValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35D55C87BD8FB7029BECE /* FXModelRequiredValidatorTests.m */; };
+		ABC358D97B64D9B86FE90DE9 /* FXModelStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35CE131A659AC125C7A99 /* FXModelStringValidator.m */; };
+		ABC3592435C70C0E9F71E335 /* Form.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35DD62F363EA2BFEF57AE /* Form.m */; };
+		ABC35ACB2A38F2495609BCA7 /* FXModelObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3566A9728DD46BBBE355A /* FXModelObserver.m */; };
+		ABC35C04BFF59CE4316B454F /* FXModelRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3504784E0E03C411482CC /* FXModelRequiredValidator.m */; };
+		ABC35D48E527965A0A0D34FC /* FXModelInlineValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35C5600EF4BBFBD12839B /* FXModelInlineValidator.m */; };
+		ABC35D8DBF4594346D6E3989 /* FXModelBooleanValidatorTests.m in Resources */ = {isa = PBXBuildFile; fileRef = ABC35A96927EB11D7A133760 /* FXModelBooleanValidatorTests.m */; };
+		ABC35DA139C636D91CF44091 /* FXModelRegExpValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35D26274D20E62F3EC25A /* FXModelRegExpValidator.m */; };
+		ABC35DA2F210F96BB475B955 /* FXModelBooleanValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35BC2EA524065545A9481 /* FXModelBooleanValidator.m */; };
+		ABC35E86A9F9483AC3BC5129 /* FXModelTrimFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC356F98E5EC356F6E1851F /* FXModelTrimFilterTests.m */; };
+		ABC35F55AE0BF8FADAD4B8E2 /* FXModelCompareValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35DB1A0436B4D54D55F3A /* FXModelCompareValidatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E8936CB5DE7FF3E95F1E1B2 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FDBA4842A9AA1FDFB0385D1 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ABC3501C4AA3A407BDB1F071 /* FXModelStringValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelStringValidatorTests.m; sourceTree = "<group>"; };
+		ABC3504784E0E03C411482CC /* FXModelRequiredValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRequiredValidator.m; sourceTree = "<group>"; };
+		ABC35078A1F7C25DBAA6CDD2 /* FXModelInlineValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelInlineValidatorTests.m; sourceTree = "<group>"; };
+		ABC3510FD4779F9997AE4AB8 /* FXModelEmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelEmailValidator.m; sourceTree = "<group>"; };
+		ABC3513F6DF3A363FBBB4757 /* FXModelFilterValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelFilterValidatorTests.m; sourceTree = "<group>"; };
+		ABC3538842A6229D8D0532E3 /* FXModelFilterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelFilterValidator.h; sourceTree = "<group>"; };
+		ABC353AB8849020B2731D9B0 /* FXModelEmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelEmailValidator.h; sourceTree = "<group>"; };
+		ABC3545AAFD4222E3D6649D4 /* NSObject+FXModelValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FXModelValidation.h"; sourceTree = "<group>"; };
+		ABC35484B0BE49AF2DA8F3C0 /* FXModelBooleanValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelBooleanValidator.h; sourceTree = "<group>"; };
+		ABC3550A763BC787B934CC70 /* FXModelEmailValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelEmailValidatorTests.m; sourceTree = "<group>"; };
+		ABC35555FF8BDD6EA4931949 /* FXModelRegExpValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelRegExpValidator.h; sourceTree = "<group>"; };
+		ABC3564BC48D3E4470ED5DD0 /* FXModelCompareValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelCompareValidator.h; sourceTree = "<group>"; };
+		ABC3566A9728DD46BBBE355A /* FXModelObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelObserver.m; sourceTree = "<group>"; };
+		ABC35686E1EA9FB83A58EC17 /* FXModelUrlValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelUrlValidator.m; sourceTree = "<group>"; };
+		ABC356F98E5EC356F6E1851F /* FXModelTrimFilterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelTrimFilterTests.m; sourceTree = "<group>"; };
+		ABC356FA0400B40F99D6F6F6 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
+		ABC3574B2848C8354E4D93E5 /* FXModelNumberValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelNumberValidatorTests.m; sourceTree = "<group>"; };
+		ABC35755E37EAD2B6759B554 /* FXModelDefaultValueValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelDefaultValueValidator.h; sourceTree = "<group>"; };
+		ABC35797B6D2DC693AE11337 /* Form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
+		ABC357BEA890420CC4D4A5AC /* FXModelSafeValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelSafeValidator.h; sourceTree = "<group>"; };
+		ABC357C99531754BBE44A6E5 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC35836602679702FF2CA5D /* FXModelDefaultValueValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelDefaultValueValidatorTests.m; sourceTree = "<group>"; };
+		ABC358DBF0A2D73DA773655F /* FXModelRangeValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRangeValidatorTests.m; sourceTree = "<group>"; };
+		ABC359CF44FCD2832F75673A /* FXModelValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelValidator.h; sourceTree = "<group>"; };
+		ABC359DA759369BE4E814959 /* FXModelStringValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelStringValidator.h; sourceTree = "<group>"; };
+		ABC359E62D542FC03892D09D /* NSObject+FXModelValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FXModelValidation.m"; sourceTree = "<group>"; };
+		ABC35A0F4391F1B91ACC508D /* FXModelInlineValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelInlineValidator.h; sourceTree = "<group>"; };
+		ABC35A26A00389BE6F87A5FB /* FXModelRangeValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelRangeValidator.h; sourceTree = "<group>"; };
+		ABC35A28C645834007613675 /* FXModelObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelObserver.h; sourceTree = "<group>"; };
+		ABC35A3A341530EE5F77926F /* FXModelCompareValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelCompareValidator.m; sourceTree = "<group>"; };
+		ABC35A3CB9F7FD1C014C65FB /* CommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelper.h; sourceTree = "<group>"; };
+		ABC35A4BFB195EB6AA6A18EB /* FXModelUrlValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelUrlValidatorTests.m; sourceTree = "<group>"; };
+		ABC35A96927EB11D7A133760 /* FXModelBooleanValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelBooleanValidatorTests.m; sourceTree = "<group>"; };
+		ABC35ABADF20A01F792D9CF6 /* FXModelSafeValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelSafeValidator.m; sourceTree = "<group>"; };
+		ABC35ABE89EC437D9E082E5F /* FXModelValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelValidator.m; sourceTree = "<group>"; };
+		ABC35ABF62A5C761CF169FED /* FXModelUrlValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelUrlValidator.h; sourceTree = "<group>"; };
+		ABC35AC6EBBBFCE448A2BEA8 /* FXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModel.m; sourceTree = "<group>"; };
+		ABC35AFA69DF661B9E410FEA /* FXModelNumberValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelNumberValidator.h; sourceTree = "<group>"; };
+		ABC35B6F1642D44EB1A8A898 /* FXModelTrimFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelTrimFilter.m; sourceTree = "<group>"; };
+		ABC35B783F9E6741C5228082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		ABC35BC2EA524065545A9481 /* FXModelBooleanValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelBooleanValidator.m; sourceTree = "<group>"; };
+		ABC35C1ECBFC05AA2BFC1C87 /* FXModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelTests.m; sourceTree = "<group>"; };
+		ABC35C5600EF4BBFBD12839B /* FXModelInlineValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelInlineValidator.m; sourceTree = "<group>"; };
+		ABC35CE131A659AC125C7A99 /* FXModelStringValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelStringValidator.m; sourceTree = "<group>"; };
+		ABC35D0E1C0FD206130C5B34 /* FXModelRegExpValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRegExpValidatorTests.m; sourceTree = "<group>"; };
+		ABC35D26274D20E62F3EC25A /* FXModelRegExpValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRegExpValidator.m; sourceTree = "<group>"; };
+		ABC35D2E5A9D6F3BDB951F82 /* FXModelValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelValidation.h; sourceTree = "<group>"; };
+		ABC35D420939DA599C992BE3 /* FXModelTrimFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelTrimFilter.h; sourceTree = "<group>"; };
+		ABC35D46E3679A75E7F30247 /* FXModelRangeValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRangeValidator.m; sourceTree = "<group>"; };
+		ABC35D55C87BD8FB7029BECE /* FXModelRequiredValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRequiredValidatorTests.m; sourceTree = "<group>"; };
+		ABC35D7521136DC812079699 /* FXModelDefaultValueValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelDefaultValueValidator.m; sourceTree = "<group>"; };
+		ABC35DB1A0436B4D54D55F3A /* FXModelCompareValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelCompareValidatorTests.m; sourceTree = "<group>"; };
+		ABC35DD62F363EA2BFEF57AE /* Form.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Form.m; sourceTree = "<group>"; };
+		ABC35E1333A0DCF6DC937422 /* FXModelSafeValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelSafeValidatorTests.m; sourceTree = "<group>"; };
+		ABC35E506EF13B3EA0DDEBC6 /* FXModelRequiredValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelRequiredValidator.h; sourceTree = "<group>"; };
+		ABC35ECFBD1A146653618FAB /* FXModelNumberValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelNumberValidator.m; sourceTree = "<group>"; };
+		ABC35F0D93C52B1EFF38596E /* FXModelFilterValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelFilterValidator.m; sourceTree = "<group>"; };
+		ABC35F3A6B279BF4AF117FA6 /* FXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModel.h; sourceTree = "<group>"; };
+		B863E6CBE4E80A5A22A40201 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABC35B2BCAF654AF1DCC3054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F210DD2DBDF9229C853BF8 /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D22C46E31139E75E1199221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E8936CB5DE7FF3E95F1E1B2 /* Pods-Tests.debug.xcconfig */,
+				6FDBA4842A9AA1FDFB0385D1 /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABC35013CF49B1657F2D2EEA /* TestValidators */ = {
+			isa = PBXGroup;
+			children = (
+				ABC3550A763BC787B934CC70 /* FXModelEmailValidatorTests.m */,
+				ABC35A96927EB11D7A133760 /* FXModelBooleanValidatorTests.m */,
+				ABC35DB1A0436B4D54D55F3A /* FXModelCompareValidatorTests.m */,
+				ABC35836602679702FF2CA5D /* FXModelDefaultValueValidatorTests.m */,
+				ABC35078A1F7C25DBAA6CDD2 /* FXModelInlineValidatorTests.m */,
+				ABC35D55C87BD8FB7029BECE /* FXModelRequiredValidatorTests.m */,
+				ABC3574B2848C8354E4D93E5 /* FXModelNumberValidatorTests.m */,
+				ABC358DBF0A2D73DA773655F /* FXModelRangeValidatorTests.m */,
+				ABC35D0E1C0FD206130C5B34 /* FXModelRegExpValidatorTests.m */,
+				ABC3501C4AA3A407BDB1F071 /* FXModelStringValidatorTests.m */,
+				ABC35A4BFB195EB6AA6A18EB /* FXModelUrlValidatorTests.m */,
+				ABC3513F6DF3A363FBBB4757 /* FXModelFilterValidatorTests.m */,
+				ABC356F98E5EC356F6E1851F /* FXModelTrimFilterTests.m */,
+				ABC35E1333A0DCF6DC937422 /* FXModelSafeValidatorTests.m */,
+			);
+			path = TestValidators;
+			sourceTree = "<group>";
+		};
+		ABC3557059372154262D3E7B /* TestModels */ = {
+			isa = PBXGroup;
+			children = (
+				ABC356FA0400B40F99D6F6F6 /* ModelTests.m */,
+				ABC35C1ECBFC05AA2BFC1C87 /* FXModelTests.m */,
+			);
+			path = TestModels;
+			sourceTree = "<group>";
+		};
+		ABC3557A04C69F3394940080 = {
+			isa = PBXGroup;
+			children = (
+				ABC35B296F7B03AF14F24EE0 /* Products */,
+				ABC35B3093666B4E51BAB85B /* Tests */,
+				0D22C46E31139E75E1199221 /* Pods */,
+				F890365803F24FE17692CC1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABC356FFB3365F6EE7D2BC9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABC35B783F9E6741C5228082 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABC35967157CB34B516C5247 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				ABC35B6F1642D44EB1A8A898 /* FXModelTrimFilter.m */,
+				ABC35D420939DA599C992BE3 /* FXModelTrimFilter.h */,
+			);
+			path = filters;
+			sourceTree = "<group>";
+		};
+		ABC3598BEBDB4B449B6410BD /* validators */ = {
+			isa = PBXGroup;
+			children = (
+				ABC35C5600EF4BBFBD12839B /* FXModelInlineValidator.m */,
+				ABC35A0F4391F1B91ACC508D /* FXModelInlineValidator.h */,
+				ABC35E506EF13B3EA0DDEBC6 /* FXModelRequiredValidator.h */,
+				ABC3504784E0E03C411482CC /* FXModelRequiredValidator.m */,
+				ABC3510FD4779F9997AE4AB8 /* FXModelEmailValidator.m */,
+				ABC353AB8849020B2731D9B0 /* FXModelEmailValidator.h */,
+				ABC35BC2EA524065545A9481 /* FXModelBooleanValidator.m */,
+				ABC35484B0BE49AF2DA8F3C0 /* FXModelBooleanValidator.h */,
+				ABC35A3A341530EE5F77926F /* FXModelCompareValidator.m */,
+				ABC3564BC48D3E4470ED5DD0 /* FXModelCompareValidator.h */,
+				ABC35D7521136DC812079699 /* FXModelDefaultValueValidator.m */,
+				ABC35755E37EAD2B6759B554 /* FXModelDefaultValueValidator.h */,
+				ABC35ECFBD1A146653618FAB /* FXModelNumberValidator.m */,
+				ABC35AFA69DF661B9E410FEA /* FXModelNumberValidator.h */,
+				ABC35D46E3679A75E7F30247 /* FXModelRangeValidator.m */,
+				ABC35A26A00389BE6F87A5FB /* FXModelRangeValidator.h */,
+				ABC35D26274D20E62F3EC25A /* FXModelRegExpValidator.m */,
+				ABC35555FF8BDD6EA4931949 /* FXModelRegExpValidator.h */,
+				ABC35CE131A659AC125C7A99 /* FXModelStringValidator.m */,
+				ABC359DA759369BE4E814959 /* FXModelStringValidator.h */,
+				ABC35686E1EA9FB83A58EC17 /* FXModelUrlValidator.m */,
+				ABC35ABF62A5C761CF169FED /* FXModelUrlValidator.h */,
+				ABC35F0D93C52B1EFF38596E /* FXModelFilterValidator.m */,
+				ABC3538842A6229D8D0532E3 /* FXModelFilterValidator.h */,
+				ABC35967157CB34B516C5247 /* filters */,
+				ABC35ABADF20A01F792D9CF6 /* FXModelSafeValidator.m */,
+				ABC357BEA890420CC4D4A5AC /* FXModelSafeValidator.h */,
+				ABC35ABE89EC437D9E082E5F /* FXModelValidator.m */,
+				ABC359CF44FCD2832F75673A /* FXModelValidator.h */,
+			);
+			path = validators;
+			sourceTree = "<group>";
+		};
+		ABC359B80BA6929021A8404A /* FXModelValidation */ = {
+			isa = PBXGroup;
+			children = (
+				ABC359E62D542FC03892D09D /* NSObject+FXModelValidation.m */,
+				ABC3545AAFD4222E3D6649D4 /* NSObject+FXModelValidation.h */,
+				ABC35AC6EBBBFCE448A2BEA8 /* FXModel.m */,
+				ABC35F3A6B279BF4AF117FA6 /* FXModel.h */,
+				ABC3598BEBDB4B449B6410BD /* validators */,
+				ABC35D2E5A9D6F3BDB951F82 /* FXModelValidation.h */,
+				ABC3566A9728DD46BBBE355A /* FXModelObserver.m */,
+				ABC35A28C645834007613675 /* FXModelObserver.h */,
+			);
+			name = FXModelValidation;
+			path = ../../FXModelValidation;
+			sourceTree = "<group>";
+		};
+		ABC35B296F7B03AF14F24EE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABC357C99531754BBE44A6E5 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABC35B3093666B4E51BAB85B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC356FFB3365F6EE7D2BC9E /* Supporting Files */,
+				ABC359B80BA6929021A8404A /* FXModelValidation */,
+				ABC35EBFEDE4181AA4EBE507 /* Helpers */,
+				ABC35013CF49B1657F2D2EEA /* TestValidators */,
+				ABC3557059372154262D3E7B /* TestModels */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		ABC35EBFEDE4181AA4EBE507 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABC35A3CB9F7FD1C014C65FB /* CommonHelper.h */,
+				ABC35DD62F363EA2BFEF57AE /* Form.m */,
+				ABC35797B6D2DC693AE11337 /* Form.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F890365803F24FE17692CC1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B863E6CBE4E80A5A22A40201 /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABC352A5AE9376B5C2D2F3B5 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC358B0D8CB3F686A34ACA7 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				8E9EE712083E62662F0C8103 /* Check Pods Manifest.lock */,
+				ABC35698A125070EF06EC45A /* Sources */,
+				ABC35B2BCAF654AF1DCC3054 /* Frameworks */,
+				ABC35F523ED935C4040A6D87 /* Resources */,
+				9710A0D66895A14CDBEB6835 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = ABC357C99531754BBE44A6E5 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABC35C3536B764F0CCEC2F94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Andrey Gayvoronsky";
+			};
+			buildConfigurationList = ABC35960049C9086C3E76A33 /* Build configuration list for PBXProject "Tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABC3557A04C69F3394940080;
+			productRefGroup = ABC35B296F7B03AF14F24EE0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				ABC352A5AE9376B5C2D2F3B5 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC35F523ED935C4040A6D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC35D8DBF4594346D6E3989 /* FXModelBooleanValidatorTests.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E9EE712083E62662F0C8103 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9710A0D66895A14CDBEB6835 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABC35698A125070EF06EC45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC35201645E0C7466BAAA14 /* NSObject+FXModelValidation.m in Sources */,
+				ABC350C46126614B4E1FD022 /* FXModel.m in Sources */,
+				ABC35D48E527965A0A0D34FC /* FXModelInlineValidator.m in Sources */,
+				ABC35C04BFF59CE4316B454F /* FXModelRequiredValidator.m in Sources */,
+				ABC353F871F6A860B2838DF6 /* FXModelEmailValidator.m in Sources */,
+				ABC35DA2F210F96BB475B955 /* FXModelBooleanValidator.m in Sources */,
+				ABC3583FF92D67CA38462FD9 /* FXModelCompareValidator.m in Sources */,
+				ABC35832FEAFB1D6D9E00DBC /* FXModelDefaultValueValidator.m in Sources */,
+				ABC35262BB77B35CA13DFA68 /* FXModelEmailValidatorTests.m in Sources */,
+				ABC3537054C9BBC2F2B57CDE /* ModelTests.m in Sources */,
+				ABC35F55AE0BF8FADAD4B8E2 /* FXModelCompareValidatorTests.m in Sources */,
+				ABC3535CFC2C9A5DA94DF79E /* FXModelDefaultValueValidatorTests.m in Sources */,
+				ABC3503CAF484A4F0CFDAF37 /* FXModelInlineValidatorTests.m in Sources */,
+				ABC3584E6C9ED68A22E92863 /* FXModelRequiredValidatorTests.m in Sources */,
+				ABC354E1BB33A6BDF8ACBAA0 /* FXModelNumberValidator.m in Sources */,
+				ABC356BCBA0486C21115F11A /* FXModelRangeValidator.m in Sources */,
+				ABC357603B339981A5BED068 /* FXModelNumberValidatorTests.m in Sources */,
+				ABC3512601F6166BDDB90AA9 /* FXModelRangeValidatorTests.m in Sources */,
+				ABC35DA139C636D91CF44091 /* FXModelRegExpValidator.m in Sources */,
+				ABC355EB45C43F6670C048CA /* FXModelRegExpValidatorTests.m in Sources */,
+				ABC358D97B64D9B86FE90DE9 /* FXModelStringValidator.m in Sources */,
+				ABC3512DB18DD08C74A9B8DF /* FXModelStringValidatorTests.m in Sources */,
+				ABC357A677D9B60A05AA5E9B /* FXModelUrlValidator.m in Sources */,
+				ABC358228B723DD8C2C5D7D7 /* FXModelUrlValidatorTests.m in Sources */,
+				ABC354DD8A5B079725C1A8E1 /* FXModelFilterValidator.m in Sources */,
+				ABC35655B74F479089A9945A /* FXModelTrimFilter.m in Sources */,
+				ABC3545D8E1C239FF550B2A7 /* FXModelFilterValidatorTests.m in Sources */,
+				ABC3592435C70C0E9F71E335 /* Form.m in Sources */,
+				ABC35692B7EA7B468008AB0D /* FXModelTests.m in Sources */,
+				ABC356CC00CA13C2F79F6EEB /* FXModelSafeValidator.m in Sources */,
+				ABC353765B9F8B61BCF8E3FC /* FXModelValidator.m in Sources */,
+				ABC35ACB2A38F2495609BCA7 /* FXModelObserver.m in Sources */,
+				ABC35E86A9F9483AC3BC5129 /* FXModelTrimFilterTests.m in Sources */,
+				ABC357047986BA34C2E691AB /* FXModelSafeValidatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABC35031FDAB50E5297FDB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8936CB5DE7FF3E95F1E1B2 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABC354FD585D0EA96A72CBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABC35669C79B8EA2842DBC9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDBA4842A9AA1FDFB0385D1 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ABC3594E302D5C079A0C9366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABC358B0D8CB3F686A34ACA7 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC35031FDAB50E5297FDB7B /* Debug */,
+				ABC35669C79B8EA2842DBC9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABC35960049C9086C3E76A33 /* Build configuration list for PBXProject "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC354FD585D0EA96A72CBC2 /* Debug */,
+				ABC3594E302D5C079A0C9366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABC35C3536B764F0CCEC2F94 /* Project object */;
+}
