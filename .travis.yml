@@ -9,4 +9,4 @@ before_script:
 - sudo easy_install cpp-coveralls
 - sudo easy_install pyyaml
 after_success:
-- coveralls
+- coveralls -e Tests/Pods
