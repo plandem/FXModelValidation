@@ -6,7 +6,5 @@ xcode_sdk: iphonesimulator
 osx_image: xcode61
 before_script:
 - sudo easy_install cpp-coveralls
-- brew update
-- brew upgrade xctool
 after_success:
 - coveralls
