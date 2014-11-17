@@ -1,0 +1,6 @@
+language: objective-c
+podfile: Tests/Podfile
+xcode_workspace: Tests/Tests.xcworkspace
+xcode_scheme: Tests
+xcode_sdk: iphonesimulator
+osx_image: xcode61
