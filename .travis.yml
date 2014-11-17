@@ -8,5 +8,6 @@ before_script:
 - brew install libyaml
 - sudo easy_install cpp-coveralls
 - sudo easy_install pyyaml
+script: bundle exec travis-xcodebuild
 after_success:
 - coveralls -e Tests/Pods
