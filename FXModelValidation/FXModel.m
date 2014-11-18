@@ -22,6 +22,7 @@ NSString *const FXModelValidatorAttributes = @"attributes";
 NSString *const FXModelValidatorSkipOnError = @"skipOnError";
 NSString *const FXModelValidatorSkipOnEmpty = @"skipOnEmpty";
 NSString *const FXModelValidatorMessage = @"message";
+NSString *const FXModelValidatorIsEmpty = @"isEmpty";
 NSString *const FXModelValidatorAction = @"action";
 NSString *const FXModelValidatorTrueValue = @"trueValue";
 NSString *const FXModelValidatorFalseValue = @"falseValue";

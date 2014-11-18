@@ -15,6 +15,7 @@ FOUNDATION_EXPORT NSString *const FXModelValidatorWhen;
 FOUNDATION_EXPORT NSString *const FXModelValidatorSkipOnError;
 FOUNDATION_EXPORT NSString *const FXModelValidatorSkipOnEmpty;
 FOUNDATION_EXPORT NSString *const FXModelValidatorMessage;
+FOUNDATION_EXPORT NSString *const FXModelValidatorIsEmpty;
 FOUNDATION_EXPORT NSString *const FXModelValidatorAction;
 FOUNDATION_EXPORT NSString *const FXModelValidatorTrueValue;
 FOUNDATION_EXPORT NSString *const FXModelValidatorFalseValue;
