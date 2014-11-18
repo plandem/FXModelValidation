@@ -26,7 +26,7 @@ FXModelValidation requires ARC.
 ```
 pod 'FXModelValidation'
 ```
-- read this guide, [Validating Input](https://github.com/plandem/FXModelValidation/blob/master/Validation%20Input.md), [Core Validators](https://github.com/plandem/FXModelValidation/blob/master/Core%20Validators.md) and check out the [API documentation](http://cocoadocs.org/docsets/FXModelValidation)
+- read this guide, [Validating Input](https://github.com/plandem/FXModelValidation/blob/master/Validating%20Input.md), [Core Validators](https://github.com/plandem/FXModelValidation/blob/master/Core%20Validators.md) and check out the [API documentation](http://cocoadocs.org/docsets/FXModelValidation)
 - if you find issues or want to suggest improvements, create an issue or a pull request
 
 ##Attaching FXModelValidation
@@ -195,7 +195,7 @@ To declare validation rules associated with a model, override the **rules** meth
 }
 ```
 
-A rule can be used to validate one or multiple attributes, and an attribute may be validated by one or multiple rules. Please refer to the [Validating Input](https://github.com/plandem/FXModelValidation/blob/master/VALIDATION%20INPUT.md) section for more details on how to declare validation rules.
+A rule can be used to validate one or multiple attributes, and an attribute may be validated by one or multiple rules. Please refer to the [Validating Input](https://github.com/plandem/FXModelValidation/blob/master/Validating%20Input.md) section for more details on how to declare validation rules.
 
 Sometimes, you may want a rule to be applied only in certain scenarios. To do so, you can specify the on property of a rule, like the following:
 
