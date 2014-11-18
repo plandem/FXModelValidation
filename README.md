@@ -26,7 +26,7 @@ FXModelValidation requires ARC.
 ```
 pod 'FXModelValidation'
 ```
-- read this guide, check out the [API documentation](http://cocoadocs.org/docsets/FXModelValidation)
+- read this guide, [Validating Input](https://github.com/plandem/FXModelValidation/blob/master/VALIDATION%20INPUT.md) and check out the [API documentation](http://cocoadocs.org/docsets/FXModelValidation)
 - if you find issues or want to suggest improvements, create an issue or a pull request
 
 ##Attaching FXModelValidation
