@@ -5,4 +5,4 @@
 
 TODO: usage, examples.
 
-API documentation: http://cocoadocs.org/docsets/FXModelValidation/
+API documentation: http://cocoadocs.org/docsets/FXModelValidation
