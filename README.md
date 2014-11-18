@@ -3,4 +3,6 @@
 [![Pod Version](http://img.shields.io/cocoapods/v/FXModelValidation.svg?style=flat)](http://cocoadocs.org/docsets/FXModelValidation/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/FXModelValidation.svg?style=flat)](http://cocoadocs.org/docsets/FXModelValidation/)
 
-TODO
+TODO: usage, examples.
+
+API documentation: http://cocoadocs.org/docsets/FXModelValidation/
