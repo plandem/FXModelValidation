@@ -84,7 +84,7 @@ There is also a short version that you can use in case when only FXModelValidato
 
 For each rule you must specify at least which attributes the rule applies to and what is the type of the rule. You can specify the rule type in one of the following forms:
  
-- the alias of a core validator, such as _required_, _in_, _email_, etc. Please refer to the [Core Validators] for the complete list of core validators.
+- the alias of a core validator, such as _required_, _in_, _email_, etc. Please refer to the [Core Validators](https://github.com/plandem/FXModelValidation/blob/master/Core%20Validators.md) for the complete list of core validators.
 - the name of a validation method in the model class, or a block. Please refer to the [Inline Validators] subsection for more details.
 - a fully qualified validator class or class name. Please refer to the [Standalone Validators] subsection for more details.
 
