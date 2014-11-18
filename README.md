@@ -15,6 +15,7 @@ To make it to work you must do only 3 small steps:
 - Supported build target - iOS 8.1/OSX 10.10 (Xcode 6.1, Apple LLVM compiler 6.0)
 - Earliest supported deployment target - iOS 5.0/OSX 10.7
 - Earliest compatible deployment target - iOS 5.0/OSX 10.7
+ 
 >Note: 'Supported' means that the library has been tested with this version. 'Compatible' means that the library should work on this iOS version (i.e. it doesn't rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.
 
 ##ARC Compatibility
