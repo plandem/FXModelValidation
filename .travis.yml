@@ -8,6 +8,7 @@ before_script:
 - brew install libyaml
 - sudo easy_install cpp-coveralls
 - sudo easy_install pyyaml
-script: bundle exec travis-xcodebuild
+- sudo easy_install gcovr    
+script: xctool clean test -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator OBJROOT=./Build  
 after_success:
-- coveralls -e Tests/Pods
+- coveralls -e Tests/Pods --gcov-options '\-lp'
