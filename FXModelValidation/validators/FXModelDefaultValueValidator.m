@@ -17,6 +17,12 @@ NSString *const FXFormDefaultValueValidatorMethodSignature = @"%@:";
 
 -(void)validate:(id)model attribute:(NSString *)attribute {
 	NSAssert(attribute, @"Name of attribute can't be nil.");
+
+	id oldValue = [model valueForKey:attribute];
+
+	if (!([self isEmpty:oldValue]))
+		return;
+
    	id newValue = _value;
 	SEL method = nil;
 
@@ -31,6 +37,7 @@ NSString *const FXFormDefaultValueValidatorMethodSignature = @"%@:";
 		newValue = ((FXFormDefaultValueValidatorBlock)_value)(model, attribute);
 	}
 
-	[model setValue:newValue forKey:attribute];
+	if(!([oldValue isEqual:newValue]))
+		[model setValue:newValue forKey:attribute];
 }
 @end

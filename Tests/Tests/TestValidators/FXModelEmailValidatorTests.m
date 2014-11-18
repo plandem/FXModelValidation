@@ -3,7 +3,7 @@
 SpecBegin(FXModelEmailValidator)
 		__block FXModelEmailValidator *validator;
 		__block NSError *error;
-	   return;
+
 		describe(@"validateValue", ^{
 			beforeEach(^{
 				validator = [[FXModelEmailValidator alloc] init];

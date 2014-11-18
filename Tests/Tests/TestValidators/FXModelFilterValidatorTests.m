@@ -40,6 +40,22 @@ SpecBegin(FXModelFilterValidator)
 				expect(form.valueString).to.equal(@"test string");
 			});
 
+			it(@"-inline method filter should update valueString", ^{
+				[form validationInitWithRules:@[
+						@{
+								FXModelValidatorAttributes : @"valueString",
+								FXModelValidatorType : @"filter",
+								FXModelValidatorFilter : @"filter_valueString",
+						},
+				] force:YES];
+
+				form.scenario = @"update";
+				form.valueString = @"   test string   ";
+				expect(form.valueString).to.equal(@"   test string   ");
+				form.validate;
+				expect(form.valueString).to.equal(@"method filtered string");
+			});
+
 			afterEach(^{
 				form = nil;
 			});

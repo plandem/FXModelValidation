@@ -30,9 +30,11 @@ NSString *const FXFormInlineValidatorMethodSignature = @"%@:params:";
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 		[model performSelector:method withObject:attribute withObject:_params];
 #pragma clang diagnostic pop
-	} else if(_action) {
+	} else if([_action isKindOfClass:NSClassFromString(@"NSBlock")])  {
 		//action is block?
 		((FXFormInlineValidatorBlock)_action)(model, attribute, _params);
+	} else {
+		@throw [NSException exceptionWithName:@"FXModelInlineValidator" reason:@"The 'action' property is incorrect." userInfo:nil];
 	}
 }
 

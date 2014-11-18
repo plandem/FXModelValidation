@@ -77,7 +77,7 @@
 /**
 * Attach FXModelValidation protocol implementation to class.
 */
-+(BOOL)validationInit; //attach FXModel to class
++(BOOL)validationInit;
 
 /**
 * Attach FXModelValidation protocol implementation to instance
@@ -87,20 +87,20 @@
 /**
 * Attach FXModelValidation protocol implementation to class and try to add an implementation for rules method. The default class implementation of rules will be used if there is any.
 */
-+(BOOL)validationInitWithRules:(NSArray *)rules; //attach FXModel to class and override implementation for rules
++(BOOL)validationInitWithRules:(NSArray *)rules;
 
 /**
 * Attach FXModelValidation protocol implementation to instance and try to add an implementation for rules method. The default class implementation of rules will be used if there is any.
 */
--(BOOL)validationInitWithRules:(NSArray *)rules; //attach FXModel to instance and override implementation for rules
+-(BOOL)validationInitWithRules:(NSArray *)rules;
 
 /**
 * Attach FXModelValidation protocol implementation to class and force to use an implementation for new implementation of rules method. The default class implementation of rules will be ignored.
 */
-+(void)validationInitWithRules:(NSArray *)rules force:(BOOL)force; //attach FXModel to class and force to override implementation for rules
++(void)validationInitWithRules:(NSArray *)rules force:(BOOL)force;
 
 /**
 * Attach FXModelValidation protocol implementation to class and force to use an implementation for new implementation of rules method. The default class implementation of rules will be ignored.
 */
--(void)validationInitWithRules:(NSArray *)rules force:(BOOL)force; //attach FXModel to instance and force to override implementation for rules
+-(void)validationInitWithRules:(NSArray *)rules force:(BOOL)force;
 @end

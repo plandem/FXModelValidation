@@ -18,4 +18,17 @@
 	};
 };
 
+
+-(id)default_valueString:(id)value{
+	return @"method value";
+}
+
+-(id)filter_valueString:(id)value params:(NSDictionary *)params {
+	return @"method filtered string";
+}
+
+-(void)action_valueString:(NSString *)attribute params:(NSDictionary *)params {
+	[self addError:attribute message:@"error from inline method validator"];
+}
+
 @end

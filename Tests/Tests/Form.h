@@ -17,4 +17,14 @@
 @property (nonatomic, copy) NSNumber *valueNumber;
 
 -(NSArray *)rules;
+
+//inline 'value' for FXModelDefaultValueValidator
+-(id)default_valueString:(id)value;
+
+//inline 'filter' for FXModelFilterValidator
+-(id)filter_valueString:(id)value params:(NSDictionary *)params;
+
+//inline 'action' for FXModelInlineValidator
+-(void)action_valueString:(NSString *)attribute params:(NSDictionary *)params;
+
 @end

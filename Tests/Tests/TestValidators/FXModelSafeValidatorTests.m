@@ -1,23 +1,46 @@
 #import "CommonHelper.h"
 
+@interface Form1: NSObject <FXModelValidation>
+@property (nonatomic, assign) NSInteger valueInteger;
+@end;
+
+@implementation Form1
+@end;
+
 SpecBegin(FXModelSafeValidator)
-		__block FXModelSafeValidator *validator;
-		__block NSError *error;
-		return;
+		__block Form1 *form;
 
 		describe(@"validateValue", ^{
 			beforeEach(^{
-				validator = [[FXModelSafeValidator alloc] initWithAttributes:nil params:@{
-
-				}];
+				form = [[Form1 alloc] init];
 			});
 
-			it(@"", ^{
+			it(@"-mass assignment should not work", ^{
+				[form validationInitWithRules:@[
+				] force:YES];
+
+				form.valueInteger = 100;
+				expect(form.valueInteger).to.equal(100);
+				form.attributes = @{@"valueInteger": @200};
+				expect(form.valueInteger).to.equal(100);
+			});
+
+			it(@"-mass assignment should work", ^{
+				[form validationInitWithRules:@[
+						@{
+							FXModelValidatorAttributes : @"valueInteger",
+							FXModelValidatorType: @"safe",
+						},
+				] force:YES];
+
+				form.valueInteger = 100;
+				expect(form.valueInteger).to.equal(100);
+				form.attributes = @{@"valueInteger": @200};
+				expect(form.valueInteger).to.equal(200);
 			});
 
 			afterEach(^{
-				validator = nil;
-				error = nil;
+				form = nil;
 			});
 		});
 SpecEnd

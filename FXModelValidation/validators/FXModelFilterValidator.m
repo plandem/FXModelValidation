@@ -38,7 +38,7 @@ NSString *const FXFormFilterValidatorMethodSignature = @"%@:params:";
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 			newValue = [model performSelector:method withObject:oldValue withObject:_filter];
 #pragma clang diagnostic pop
-		} else if([_filter isKindOfClass:NSClassFromString(@"NSBlock")])  {
+		} else if([_filter isKindOfClass:NSClassFromString(@"NSBlock")]) {
 			//filter is block?
 			newValue = ((FXFormFilterValidatorBlock)_filter)(oldValue, _params);
 		} else {
