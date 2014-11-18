@@ -69,6 +69,7 @@ To gain access to this functionality, you also must add *FXModelValidation proto
 ```object-c
 @interface ContactForm : NSObject <FXModelValidation>
 @end
+```
 
 That's all. Now you have access to FXModelValidation methods/properties at your class. 
 
