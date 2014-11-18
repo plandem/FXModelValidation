@@ -105,7 +105,7 @@ This validator does not validate data. Instead, it assigns a default value to th
 	return value;
 }
 ```
-> Info: How to determine if a value is empty or not is a separate topic covered in the [Empty Values](https://github.com/plandem/FXModelValidation/blob/master/Validation%20Input.md) section
+> Info: How to determine if a value is empty or not is a separate topic covered in the [Empty Values](https://github.com/plandem/FXModelValidation/blob/master/Validating%20Input.md) section
 
 ##email
 ```object-c
@@ -246,7 +246,7 @@ This validator checks if the input value is provided and not empty.
 
 - **requiredValue**: the desired value that the input should be. If not set, it means the input should not be empty.
 
-> Info: How to determine if a value is empty or not is a separate topic covered in the [Empty Values](https://github.com/plandem/FXModelValidation/blob/master/Validation%20Input.md) section.
+> Info: How to determine if a value is empty or not is a separate topic covered in the [Empty Values](https://github.com/plandem/FXModelValidation/blob/master/Validating%20Input.md) section.
 
 ##safe
 ```object-c
