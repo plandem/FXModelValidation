@@ -11,4 +11,4 @@ before_script:
 - sudo easy_install gcovr    
 script: xctool clean test -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator OBJROOT=./Build  
 after_success:
-- coveralls -e Tests/Pods --gcov-options '\-lp'
+- coveralls -e Tests/Pods -e Tests/Tests --gcov-options '\-lp'
