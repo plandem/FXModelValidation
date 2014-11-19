@@ -4,7 +4,7 @@
 [![Pod Platform](http://img.shields.io/cocoapods/p/FXModelValidation.svg?style=flat)](http://cocoadocs.org/docsets/FXModelValidation/)
 
 #Purpose
-FXModelValidation is an Objective-C library that allows to validate data/model/forms easily. Suits for any NSObject. So it should work fine both with CoreData or with raw NSObject. 
+FXModelValidation is an Objective-C library that allows to validate data/model/forms easily. Suits for any NSObject. So it should work fine both with CoreData or with raw NSObject. Library transparently supports [FXForms](https://github.com/nicklockwood/FXForms) to exclude own properties.
 
 To make it to work you must do only 3 small steps:
 - define validation rules
