@@ -4,8 +4,20 @@
 //
 
 #import "FXModel.h"
+#import "NSObject+FXModelValidation.h"
 #import <objc/runtime.h>
+
+#ifndef FXMODELVALIDATION_FXFORMS
+#define FXMODELVALIDATION_FXFORMS 1
+#endif
+
+//FXForm specific
+static NSString *FXFormName_protocol = @"FXForm";
+static NSString *FXFormName_excluded = @"excludedFields";
+static NSString *FXFormName_replaced = @"-#FXModel#-excludedFields";
+/////
 static NSMutableArray *dynamicSubclasses;
+static NSMutableArray *ignoreProperties;
 @implementation NSObject (FXModelValidation)
 
 //Attach methods from source to class
@@ -17,18 +29,79 @@ static NSMutableArray *dynamicSubclasses;
 		class_addMethod([self class], method_getName(methods[i]), method_getImplementation(methods[i]), method_getTypeEncoding(methods[i]));
 
 	free(methods);
+
+#if FXMODELVALIDATION_FXFORMS
+	//check for FXForms
+	Protocol *_protocol = NSProtocolFromString(FXFormName_protocol);
+	if([[self class] conformsToProtocol:_protocol]) {
+		//get FXModel properties
+		static dispatch_once_t onceToken;
+		dispatch_once(&onceToken, ^{
+			ignoreProperties = [NSMutableArray array];
+			unsigned int propertyCount;
+			objc_property_t *propertyList = class_copyPropertyList([FXModelWrapper class], &propertyCount);
+			for (unsigned int i = 0; i < propertyCount; i++) {
+				objc_property_t property = propertyList[i];
+				const char *propertyName = property_getName(property);
+				[ignoreProperties addObject:[NSString stringWithFormat:@"%s", propertyName]];
+			}
+			free(propertyList);
+		});
+
+		SEL excludedSEL = NSSelectorFromString(FXFormName_excluded);
+		SEL replacedSEL = NSSelectorFromString(FXFormName_replaced);
+		IMP originalIMP = [[self class] validationReplaceProtocolMethod:_protocol
+															   selector:excludedSEL
+															   required:NO
+															   instance:YES
+																  block:^NSArray*(id _self) {
+                                                                      NSMutableArray *ignored = [ignoreProperties mutableCopy];
+                                                                      
+																	  if([_self respondsToSelector:replacedSEL]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+																		  NSArray *excluded = [_self performSelector:replacedSEL];
+#pragma clang diagnostic pop
+																		  if(excluded)
+																			  [ignored addObjectsFromArray:excluded];
+																	  }
+
+																	  return ignored;
+																  }
+		];
+
+		if(originalIMP) {
+			Method originalMethod = class_getInstanceMethod([self class], excludedSEL);
+			class_addMethod([self class], replacedSEL, originalIMP, method_getTypeEncoding(originalMethod));
+		}
+	}
+#endif
+}
+
++(IMP)validationReplaceProtocolMethod:(Protocol *)aProtocol selector:(SEL)aSelector required:(BOOL)aRequired instance:(BOOL)aInstance block:(id)aBlock {
+	Method originalMethod = class_getInstanceMethod([self class], aSelector);
+	IMP replaceIMP = imp_implementationWithBlock(aBlock);
+
+	if(originalMethod) {
+		return class_replaceMethod([self class], aSelector, replaceIMP, method_getTypeEncoding(originalMethod));
+	} else {
+		struct objc_method_description description = protocol_getMethodDescription(aProtocol, aSelector, aRequired, aInstance);
+		class_addMethod([self class], aSelector, replaceIMP, description.types);
+		return nil;
+	}
 }
 
 //Replace implementation of rules
 +(void)validationAttachRules:(NSArray *)rules {
 	rules = [rules copy];
-	SEL rulesSelector = NSSelectorFromString(@"rules");
-	Method originalMethod = class_getClassMethod([self class], rulesSelector);
-	IMP rulesImp = imp_implementationWithBlock(^NSArray*(id self) {
-		return rules;
-	});
 
-	class_replaceMethod([self class], rulesSelector, rulesImp, method_getTypeEncoding(originalMethod));
+	[[self class] validationReplaceProtocolMethod:@protocol(FXModelValidation)
+										 selector:NSSelectorFromString(@"rules")
+										 required:YES
+										 instance:YES
+											block:^NSArray*(id self) {
+												return rules;
+											}];
 }
 
 //Check if attachment is possible
