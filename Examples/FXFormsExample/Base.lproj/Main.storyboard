@@ -1,25 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUr-SY-FPn">
+                                <rect key="frame" x="307" y="248" width="57" height="30"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnRegisterClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwR-tn-6gF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74R-c5-ZYW">
+                                <rect key="frame" x="208" y="248" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dD-07-yYj"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-vi-v78">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iEx-vi-v78" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="910-ZT-IxS">
+                                <variation key="widthClass=compact" constant="28"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="iEx-vi-v78" secondAttribute="bottom" constant="58" id="BMq-xu-AFs">
+                                <variation key="widthClass=compact" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="iEx-vi-v78" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KKL-35-EES"/>
+                            <constraint firstAttribute="trailing" secondItem="aUr-SY-FPn" secondAttribute="trailing" constant="71" id="NwQ-2a-BoG">
+                                <variation key="widthClass=compact" constant="47"/>
+                            </constraint>
+                            <constraint firstItem="74R-c5-ZYW" firstAttribute="top" secondItem="iEx-vi-v78" secondAttribute="bottom" constant="8" id="UiL-ic-Ovn">
+                                <variation key="widthClass=compact" constant="14"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="iEx-vi-v78" secondAttribute="trailing" id="q3H-Y2-IL8"/>
+                            <constraint firstItem="aUr-SY-FPn" firstAttribute="top" secondItem="iEx-vi-v78" secondAttribute="bottom" constant="8" id="uyW-w8-cZT">
+                                <variation key="widthClass=compact" constant="14"/>
+                            </constraint>
+                            <constraint firstItem="74R-c5-ZYW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="77" id="xg7-bf-liH">
+                                <variation key="widthClass=compact" constant="66"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iEx-vi-v78"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="UiL-ic-Ovn"/>
+                                <exclude reference="xg7-bf-liH"/>
+                                <exclude reference="NwQ-2a-BoG"/>
+                                <exclude reference="uyW-w8-cZT"/>
+                                <exclude reference="910-ZT-IxS"/>
+                                <exclude reference="BMq-xu-AFs"/>
+                                <exclude reference="KKL-35-EES"/>
+                                <exclude reference="q3H-Y2-IL8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iEx-vi-v78"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="UiL-ic-Ovn"/>
+                                <include reference="xg7-bf-liH"/>
+                                <include reference="NwQ-2a-BoG"/>
+                                <include reference="uyW-w8-cZT"/>
+                                <include reference="910-ZT-IxS"/>
+                                <include reference="BMq-xu-AFs"/>
+                                <include reference="KKL-35-EES"/>
+                                <include reference="q3H-Y2-IL8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="KMZ-TE-iAf"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="iEx-vi-v78" id="mLl-Xo-XRU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-619.5" y="-275"/>
         </scene>
     </scenes>
 </document>

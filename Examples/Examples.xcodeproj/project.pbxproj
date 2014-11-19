@@ -6,20 +6,256 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		55901AFF1A1C823F0027C024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55901AFE1A1C823F0027C024 /* main.m */; };
+		55901B021A1C823F0027C024 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55901B011A1C823F0027C024 /* AppDelegate.m */; };
+		55901B051A1C823F0027C024 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55901B041A1C823F0027C024 /* ViewController.m */; };
+		55901B081A1C823F0027C024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55901B061A1C823F0027C024 /* Main.storyboard */; };
+		55901B0A1A1C823F0027C024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55901B091A1C823F0027C024 /* Images.xcassets */; };
+		55901B221A1C84B10027C024 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 55901B211A1C84B10027C024 /* User.m */; };
+		55A64B3A1A1CF9C100346808 /* FXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B141A1CF9C100346808 /* FXModel.m */; };
+		55A64B3B1A1CF9C100346808 /* FXModelObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B161A1CF9C100346808 /* FXModelObserver.m */; };
+		55A64B3C1A1CF9C100346808 /* NSObject+FXModelValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B191A1CF9C100346808 /* NSObject+FXModelValidation.m */; };
+		55A64B3D1A1CF9C100346808 /* FXModelTrimFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B1D1A1CF9C100346808 /* FXModelTrimFilter.m */; };
+		55A64B3E1A1CF9C100346808 /* FXModelBooleanValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B1F1A1CF9C100346808 /* FXModelBooleanValidator.m */; };
+		55A64B3F1A1CF9C100346808 /* FXModelCompareValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B211A1CF9C100346808 /* FXModelCompareValidator.m */; };
+		55A64B401A1CF9C100346808 /* FXModelDefaultValueValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B231A1CF9C100346808 /* FXModelDefaultValueValidator.m */; };
+		55A64B411A1CF9C100346808 /* FXModelEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B251A1CF9C100346808 /* FXModelEmailValidator.m */; };
+		55A64B421A1CF9C100346808 /* FXModelFilterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B271A1CF9C100346808 /* FXModelFilterValidator.m */; };
+		55A64B431A1CF9C100346808 /* FXModelInlineValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B291A1CF9C100346808 /* FXModelInlineValidator.m */; };
+		55A64B441A1CF9C100346808 /* FXModelNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B2B1A1CF9C100346808 /* FXModelNumberValidator.m */; };
+		55A64B451A1CF9C100346808 /* FXModelRangeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B2D1A1CF9C100346808 /* FXModelRangeValidator.m */; };
+		55A64B461A1CF9C100346808 /* FXModelRegExpValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B2F1A1CF9C100346808 /* FXModelRegExpValidator.m */; };
+		55A64B471A1CF9C100346808 /* FXModelRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B311A1CF9C100346808 /* FXModelRequiredValidator.m */; };
+		55A64B481A1CF9C100346808 /* FXModelSafeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B331A1CF9C100346808 /* FXModelSafeValidator.m */; };
+		55A64B491A1CF9C100346808 /* FXModelStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B351A1CF9C100346808 /* FXModelStringValidator.m */; };
+		55A64B4A1A1CF9C100346808 /* FXModelUrlValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B371A1CF9C100346808 /* FXModelUrlValidator.m */; };
+		55A64B4B1A1CF9C100346808 /* FXModelValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A64B391A1CF9C100346808 /* FXModelValidator.m */; };
+		D7DF35166134711CCA4D92DB /* libPods-FXFormsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B946C9E1350ABDFB86909171 /* libPods-FXFormsExample.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55901AF91A1C823F0027C024 /* FXFormsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXFormsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55901AFD1A1C823F0027C024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55901AFE1A1C823F0027C024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55901B001A1C823F0027C024 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55901B011A1C823F0027C024 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55901B031A1C823F0027C024 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55901B041A1C823F0027C024 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		55901B071A1C823F0027C024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55901B091A1C823F0027C024 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		55901B201A1C84B10027C024 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		55901B211A1C84B10027C024 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		55A64B131A1CF9C100346808 /* FXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModel.h; sourceTree = "<group>"; };
+		55A64B141A1CF9C100346808 /* FXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModel.m; sourceTree = "<group>"; };
+		55A64B151A1CF9C100346808 /* FXModelObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelObserver.h; sourceTree = "<group>"; };
+		55A64B161A1CF9C100346808 /* FXModelObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelObserver.m; sourceTree = "<group>"; };
+		55A64B171A1CF9C100346808 /* FXModelValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelValidation.h; sourceTree = "<group>"; };
+		55A64B181A1CF9C100346808 /* NSObject+FXModelValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FXModelValidation.h"; sourceTree = "<group>"; };
+		55A64B191A1CF9C100346808 /* NSObject+FXModelValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FXModelValidation.m"; sourceTree = "<group>"; };
+		55A64B1C1A1CF9C100346808 /* FXModelTrimFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelTrimFilter.h; sourceTree = "<group>"; };
+		55A64B1D1A1CF9C100346808 /* FXModelTrimFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelTrimFilter.m; sourceTree = "<group>"; };
+		55A64B1E1A1CF9C100346808 /* FXModelBooleanValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelBooleanValidator.h; sourceTree = "<group>"; };
+		55A64B1F1A1CF9C100346808 /* FXModelBooleanValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelBooleanValidator.m; sourceTree = "<group>"; };
+		55A64B201A1CF9C100346808 /* FXModelCompareValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelCompareValidator.h; sourceTree = "<group>"; };
+		55A64B211A1CF9C100346808 /* FXModelCompareValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelCompareValidator.m; sourceTree = "<group>"; };
+		55A64B221A1CF9C100346808 /* FXModelDefaultValueValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelDefaultValueValidator.h; sourceTree = "<group>"; };
+		55A64B231A1CF9C100346808 /* FXModelDefaultValueValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelDefaultValueValidator.m; sourceTree = "<group>"; };
+		55A64B241A1CF9C100346808 /* FXModelEmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelEmailValidator.h; sourceTree = "<group>"; };
+		55A64B251A1CF9C100346808 /* FXModelEmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelEmailValidator.m; sourceTree = "<group>"; };
+		55A64B261A1CF9C100346808 /* FXModelFilterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelFilterValidator.h; sourceTree = "<group>"; };
+		55A64B271A1CF9C100346808 /* FXModelFilterValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelFilterValidator.m; sourceTree = "<group>"; };
+		55A64B281A1CF9C100346808 /* FXModelInlineValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelInlineValidator.h; sourceTree = "<group>"; };
+		55A64B291A1CF9C100346808 /* FXModelInlineValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelInlineValidator.m; sourceTree = "<group>"; };
+		55A64B2A1A1CF9C100346808 /* FXModelNumberValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelNumberValidator.h; sourceTree = "<group>"; };
+		55A64B2B1A1CF9C100346808 /* FXModelNumberValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelNumberValidator.m; sourceTree = "<group>"; };
+		55A64B2C1A1CF9C100346808 /* FXModelRangeValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelRangeValidator.h; sourceTree = "<group>"; };
+		55A64B2D1A1CF9C100346808 /* FXModelRangeValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRangeValidator.m; sourceTree = "<group>"; };
+		55A64B2E1A1CF9C100346808 /* FXModelRegExpValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelRegExpValidator.h; sourceTree = "<group>"; };
+		55A64B2F1A1CF9C100346808 /* FXModelRegExpValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRegExpValidator.m; sourceTree = "<group>"; };
+		55A64B301A1CF9C100346808 /* FXModelRequiredValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelRequiredValidator.h; sourceTree = "<group>"; };
+		55A64B311A1CF9C100346808 /* FXModelRequiredValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelRequiredValidator.m; sourceTree = "<group>"; };
+		55A64B321A1CF9C100346808 /* FXModelSafeValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelSafeValidator.h; sourceTree = "<group>"; };
+		55A64B331A1CF9C100346808 /* FXModelSafeValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelSafeValidator.m; sourceTree = "<group>"; };
+		55A64B341A1CF9C100346808 /* FXModelStringValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelStringValidator.h; sourceTree = "<group>"; };
+		55A64B351A1CF9C100346808 /* FXModelStringValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelStringValidator.m; sourceTree = "<group>"; };
+		55A64B361A1CF9C100346808 /* FXModelUrlValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelUrlValidator.h; sourceTree = "<group>"; };
+		55A64B371A1CF9C100346808 /* FXModelUrlValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelUrlValidator.m; sourceTree = "<group>"; };
+		55A64B381A1CF9C100346808 /* FXModelValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelValidator.h; sourceTree = "<group>"; };
+		55A64B391A1CF9C100346808 /* FXModelValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelValidator.m; sourceTree = "<group>"; };
+		9023C31CB98B148452B58811 /* Pods-FXFormsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXFormsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FXFormsExample/Pods-FXFormsExample.release.xcconfig"; sourceTree = "<group>"; };
+		90CBF55414480B5EE4226A99 /* Pods-FXFormsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXFormsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXFormsExample/Pods-FXFormsExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B946C9E1350ABDFB86909171 /* libPods-FXFormsExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXFormsExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55901AF61A1C823F0027C024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF35166134711CCA4D92DB /* libPods-FXFormsExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		55901AEE1A1C82300027C024 = {
 			isa = PBXGroup;
 			children = (
+				55901AFB1A1C823F0027C024 /* FXFormsExample */,
+				55901AFA1A1C823F0027C024 /* Products */,
+				86467D945F57DFCBCC648943 /* Pods */,
+				A9CAFF2E5E238A007249A0C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
+		55901AFA1A1C823F0027C024 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55901AF91A1C823F0027C024 /* FXFormsExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55901AFB1A1C823F0027C024 /* FXFormsExample */ = {
+			isa = PBXGroup;
+			children = (
+				55A64B121A1CF9C100346808 /* FXModelValidation */,
+				55901B201A1C84B10027C024 /* User.h */,
+				55901B211A1C84B10027C024 /* User.m */,
+				55901B001A1C823F0027C024 /* AppDelegate.h */,
+				55901B011A1C823F0027C024 /* AppDelegate.m */,
+				55901B031A1C823F0027C024 /* ViewController.h */,
+				55901B041A1C823F0027C024 /* ViewController.m */,
+				55901B061A1C823F0027C024 /* Main.storyboard */,
+				55901B091A1C823F0027C024 /* Images.xcassets */,
+				55901AFC1A1C823F0027C024 /* Supporting Files */,
+			);
+			path = FXFormsExample;
+			sourceTree = "<group>";
+		};
+		55901AFC1A1C823F0027C024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55901AFD1A1C823F0027C024 /* Info.plist */,
+				55901AFE1A1C823F0027C024 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55A64B121A1CF9C100346808 /* FXModelValidation */ = {
+			isa = PBXGroup;
+			children = (
+				55A64B131A1CF9C100346808 /* FXModel.h */,
+				55A64B141A1CF9C100346808 /* FXModel.m */,
+				55A64B151A1CF9C100346808 /* FXModelObserver.h */,
+				55A64B161A1CF9C100346808 /* FXModelObserver.m */,
+				55A64B171A1CF9C100346808 /* FXModelValidation.h */,
+				55A64B181A1CF9C100346808 /* NSObject+FXModelValidation.h */,
+				55A64B191A1CF9C100346808 /* NSObject+FXModelValidation.m */,
+				55A64B1A1A1CF9C100346808 /* validators */,
+			);
+			name = FXModelValidation;
+			path = ../../FXModelValidation;
+			sourceTree = "<group>";
+		};
+		55A64B1A1A1CF9C100346808 /* validators */ = {
+			isa = PBXGroup;
+			children = (
+				55A64B1B1A1CF9C100346808 /* filters */,
+				55A64B1E1A1CF9C100346808 /* FXModelBooleanValidator.h */,
+				55A64B1F1A1CF9C100346808 /* FXModelBooleanValidator.m */,
+				55A64B201A1CF9C100346808 /* FXModelCompareValidator.h */,
+				55A64B211A1CF9C100346808 /* FXModelCompareValidator.m */,
+				55A64B221A1CF9C100346808 /* FXModelDefaultValueValidator.h */,
+				55A64B231A1CF9C100346808 /* FXModelDefaultValueValidator.m */,
+				55A64B241A1CF9C100346808 /* FXModelEmailValidator.h */,
+				55A64B251A1CF9C100346808 /* FXModelEmailValidator.m */,
+				55A64B261A1CF9C100346808 /* FXModelFilterValidator.h */,
+				55A64B271A1CF9C100346808 /* FXModelFilterValidator.m */,
+				55A64B281A1CF9C100346808 /* FXModelInlineValidator.h */,
+				55A64B291A1CF9C100346808 /* FXModelInlineValidator.m */,
+				55A64B2A1A1CF9C100346808 /* FXModelNumberValidator.h */,
+				55A64B2B1A1CF9C100346808 /* FXModelNumberValidator.m */,
+				55A64B2C1A1CF9C100346808 /* FXModelRangeValidator.h */,
+				55A64B2D1A1CF9C100346808 /* FXModelRangeValidator.m */,
+				55A64B2E1A1CF9C100346808 /* FXModelRegExpValidator.h */,
+				55A64B2F1A1CF9C100346808 /* FXModelRegExpValidator.m */,
+				55A64B301A1CF9C100346808 /* FXModelRequiredValidator.h */,
+				55A64B311A1CF9C100346808 /* FXModelRequiredValidator.m */,
+				55A64B321A1CF9C100346808 /* FXModelSafeValidator.h */,
+				55A64B331A1CF9C100346808 /* FXModelSafeValidator.m */,
+				55A64B341A1CF9C100346808 /* FXModelStringValidator.h */,
+				55A64B351A1CF9C100346808 /* FXModelStringValidator.m */,
+				55A64B361A1CF9C100346808 /* FXModelUrlValidator.h */,
+				55A64B371A1CF9C100346808 /* FXModelUrlValidator.m */,
+				55A64B381A1CF9C100346808 /* FXModelValidator.h */,
+				55A64B391A1CF9C100346808 /* FXModelValidator.m */,
+			);
+			path = validators;
+			sourceTree = "<group>";
+		};
+		55A64B1B1A1CF9C100346808 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				55A64B1C1A1CF9C100346808 /* FXModelTrimFilter.h */,
+				55A64B1D1A1CF9C100346808 /* FXModelTrimFilter.m */,
+			);
+			path = filters;
+			sourceTree = "<group>";
+		};
+		86467D945F57DFCBCC648943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CBF55414480B5EE4226A99 /* Pods-FXFormsExample.debug.xcconfig */,
+				9023C31CB98B148452B58811 /* Pods-FXFormsExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9CAFF2E5E238A007249A0C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B946C9E1350ABDFB86909171 /* libPods-FXFormsExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55901AF81A1C823F0027C024 /* FXFormsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55901B1A1A1C823F0027C024 /* Build configuration list for PBXNativeTarget "FXFormsExample" */;
+			buildPhases = (
+				52E66CA09A3A0433AD1DC982 /* Check Pods Manifest.lock */,
+				55901AF51A1C823F0027C024 /* Sources */,
+				55901AF61A1C823F0027C024 /* Frameworks */,
+				55901AF71A1C823F0027C024 /* Resources */,
+				3FA7EB681B820E85C5FF8B2E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXFormsExample;
+			productName = FXFormsExample;
+			productReference = 55901AF91A1C823F0027C024 /* FXFormsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		55901AEF1A1C82300027C024 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					55901AF81A1C823F0027C024 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 55901AF21A1C82300027C024 /* Build configuration list for PBXProject "Examples" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -27,14 +263,105 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 55901AEE1A1C82300027C024;
+			productRefGroup = 55901AFA1A1C823F0027C024 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				55901AF81A1C823F0027C024 /* FXFormsExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55901AF71A1C823F0027C024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55901B081A1C823F0027C024 /* Main.storyboard in Resources */,
+				55901B0A1A1C823F0027C024 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FA7EB681B820E85C5FF8B2E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FXFormsExample/Pods-FXFormsExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52E66CA09A3A0433AD1DC982 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55901AF51A1C823F0027C024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A64B461A1CF9C100346808 /* FXModelRegExpValidator.m in Sources */,
+				55A64B3C1A1CF9C100346808 /* NSObject+FXModelValidation.m in Sources */,
+				55A64B431A1CF9C100346808 /* FXModelInlineValidator.m in Sources */,
+				55A64B481A1CF9C100346808 /* FXModelSafeValidator.m in Sources */,
+				55901B221A1C84B10027C024 /* User.m in Sources */,
+				55A64B3F1A1CF9C100346808 /* FXModelCompareValidator.m in Sources */,
+				55A64B451A1CF9C100346808 /* FXModelRangeValidator.m in Sources */,
+				55A64B491A1CF9C100346808 /* FXModelStringValidator.m in Sources */,
+				55901B051A1C823F0027C024 /* ViewController.m in Sources */,
+				55A64B471A1CF9C100346808 /* FXModelRequiredValidator.m in Sources */,
+				55901B021A1C823F0027C024 /* AppDelegate.m in Sources */,
+				55A64B3B1A1CF9C100346808 /* FXModelObserver.m in Sources */,
+				55A64B4B1A1CF9C100346808 /* FXModelValidator.m in Sources */,
+				55901AFF1A1C823F0027C024 /* main.m in Sources */,
+				55A64B441A1CF9C100346808 /* FXModelNumberValidator.m in Sources */,
+				55A64B4A1A1CF9C100346808 /* FXModelUrlValidator.m in Sources */,
+				55A64B421A1CF9C100346808 /* FXModelFilterValidator.m in Sources */,
+				55A64B3E1A1CF9C100346808 /* FXModelBooleanValidator.m in Sources */,
+				55A64B401A1CF9C100346808 /* FXModelDefaultValueValidator.m in Sources */,
+				55A64B3A1A1CF9C100346808 /* FXModel.m in Sources */,
+				55A64B3D1A1CF9C100346808 /* FXModelTrimFilter.m in Sources */,
+				55A64B411A1CF9C100346808 /* FXModelEmailValidator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55901B061A1C823F0027C024 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55901B071A1C823F0027C024 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		55901AF31A1C82300027C024 /* Debug */ = {
@@ -49,6 +376,94 @@
 			};
 			name = Release;
 		};
+		55901B1B1A1C823F0027C024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CBF55414480B5EE4226A99 /* Pods-FXFormsExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = FXFormsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		55901B1C1A1C823F0027C024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9023C31CB98B148452B58811 /* Pods-FXFormsExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = FXFormsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -57,6 +472,15 @@
 			buildConfigurations = (
 				55901AF31A1C82300027C024 /* Debug */,
 				55901AF41A1C82300027C024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55901B1A1A1C823F0027C024 /* Build configuration list for PBXNativeTarget "FXFormsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55901B1B1A1C823F0027C024 /* Debug */,
+				55901B1C1A1C823F0027C024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

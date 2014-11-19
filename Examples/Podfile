@@ -1,0 +1,4 @@
+target :FXFormsExample do
+	pod 'FXForms'
+    # pod 'FXModelValidation'
+end
