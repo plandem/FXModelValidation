@@ -8,11 +8,6 @@
 
 #import "ViewController.h"
 #import "User.h"
-///
-#import <objc/runtime.h>
-static NSString *FXFormsProtocol = @"FXForm";
-static NSString *FXFormsExclude = @"excludedFields";
-///
 @interface ViewController ()<FXFormControllerDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) FXFormController *formController;

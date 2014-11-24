@@ -48,6 +48,8 @@
 
 - (NSArray *)excludedFields
 {
+	//Just for demonstrating purpose - that we support already implemented 'excludedFields()' for FXForms.
+	//Check result of that method after object initialization and you will see here other properties too.
     return @[
              @"someProperty",
              @"someOtherProperty",
