@@ -15,7 +15,6 @@
 		ABC35201645E0C7466BAAA14 /* NSObject+FXModelValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC359E62D542FC03892D09D /* NSObject+FXModelValidation.m */; };
 		ABC35262BB77B35CA13DFA68 /* FXModelEmailValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3550A763BC787B934CC70 /* FXModelEmailValidatorTests.m */; };
 		ABC3535CFC2C9A5DA94DF79E /* FXModelDefaultValueValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35836602679702FF2CA5D /* FXModelDefaultValueValidatorTests.m */; };
-		ABC3537054C9BBC2F2B57CDE /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC356FA0400B40F99D6F6F6 /* ModelTests.m */; };
 		ABC353765B9F8B61BCF8E3FC /* FXModelValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC35ABE89EC437D9E082E5F /* FXModelValidator.m */; };
 		ABC353F871F6A860B2838DF6 /* FXModelEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3510FD4779F9997AE4AB8 /* FXModelEmailValidator.m */; };
 		ABC3545D8E1C239FF550B2A7 /* FXModelFilterValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3513F6DF3A363FBBB4757 /* FXModelFilterValidatorTests.m */; };
@@ -69,7 +68,6 @@
 		ABC3566A9728DD46BBBE355A /* FXModelObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelObserver.m; sourceTree = "<group>"; };
 		ABC35686E1EA9FB83A58EC17 /* FXModelUrlValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelUrlValidator.m; sourceTree = "<group>"; };
 		ABC356F98E5EC356F6E1851F /* FXModelTrimFilterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelTrimFilterTests.m; sourceTree = "<group>"; };
-		ABC356FA0400B40F99D6F6F6 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 		ABC3574B2848C8354E4D93E5 /* FXModelNumberValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXModelNumberValidatorTests.m; sourceTree = "<group>"; };
 		ABC35755E37EAD2B6759B554 /* FXModelDefaultValueValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXModelDefaultValueValidator.h; sourceTree = "<group>"; };
 		ABC35797B6D2DC693AE11337 /* Form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 		ABC3557059372154262D3E7B /* TestModels */ = {
 			isa = PBXGroup;
 			children = (
-				ABC356FA0400B40F99D6F6F6 /* ModelTests.m */,
 				ABC35C1ECBFC05AA2BFC1C87 /* FXModelTests.m */,
 			);
 			path = TestModels;
@@ -402,7 +399,6 @@
 				ABC3583FF92D67CA38462FD9 /* FXModelCompareValidator.m in Sources */,
 				ABC35832FEAFB1D6D9E00DBC /* FXModelDefaultValueValidator.m in Sources */,
 				ABC35262BB77B35CA13DFA68 /* FXModelEmailValidatorTests.m in Sources */,
-				ABC3537054C9BBC2F2B57CDE /* ModelTests.m in Sources */,
 				ABC35F55AE0BF8FADAD4B8E2 /* FXModelCompareValidatorTests.m in Sources */,
 				ABC3535CFC2C9A5DA94DF79E /* FXModelDefaultValueValidatorTests.m in Sources */,
 				ABC3503CAF484A4F0CFDAF37 /* FXModelInlineValidatorTests.m in Sources */,
