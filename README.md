@@ -34,7 +34,7 @@ To make FXModelValidation work with your classes, you must _attach_ it functiona
 
 ```object-c
 ContactForm* model = [ContactForm alloc] init];
-[ContactForm validationInit];
+[[ContactForm class] validationInit];
 
 ```
 >Attach FXModelValidation to class
