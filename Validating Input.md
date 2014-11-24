@@ -211,6 +211,39 @@ if ((error = [validator validateValue:email])) {
 ```
 > Note: Not all validators support such kind of validation.
 
+Alternatively, you may use the following more "classic" syntax to perform ad hoc data validation:
+```object-c
+Form *form = [[Form alloc] init];
+[form validationInitWithRules:@[
+						@{
+								FXModelValidatorAttributes : @"username,password",
+								FXModelValidatorType : @"required",
+						},
+						@{
+								FXModelValidatorAttributes : @"username",
+								FXModelValidatorType : @"email",
+						},
+				]];
+```
+> Note: Here we attach 'FXModel' functionality with __inline__ rules.
+
+or 
+
+```object-c
+Form *form = [[Form alloc] init];
+[form validationInitWithRules:@[
+						@{
+								FXModelValidatorAttributes : @"username,password",
+								FXModelValidatorType : @"required",
+						},
+						@{
+								FXModelValidatorAttributes : @"username",
+								FXModelValidatorType : @"email",
+						},
+				] force: YES];
+```
+> Note: Here we attach 'FXModel' functionality with __inline__ rules and force to override default implementation.
+
 After validation, you can check if the validation succeeds or not by calling the **hasErrors** method, and then get the validation errors from the errors property, like you do with a normal model.
 
 #Creating Validators
