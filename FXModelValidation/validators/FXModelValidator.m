@@ -83,7 +83,7 @@ static NSDictionary *FXFormBuiltInValidators;
 		params[@"{attribute}"] = attribute;
 
 		[params enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, __unused BOOL *stop) {
-			message = [message stringByReplacingOccurrencesOfString:key withString:value];
+			message = [message stringByReplacingOccurrencesOfString:key withString:[NSString stringWithFormat:@"%@", value]];
 		}];
 
 		[model addError:attribute message:message];
