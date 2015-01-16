@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "FXModelValidation"
-  s.version       = "1.0.2"
+  s.version       = "1.0.4"
   s.summary       = "FXModelValidation is an Objective-C library that allows to validate data/model/forms easily. Suits for any NSObject."  
   s.homepage      = "http://github.com/plandem/FXModelValidation"
   s.license       = { :type => 'MIT', :file => 'LICENSE' }
