@@ -96,7 +96,7 @@ static NSDictionary *FXFormBuiltInValidators;
 
 	return  (
 		value == nil || [value isKindOfClass:[NSNull class]] ||
-		(([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSSet class]]) && [value count] < 1) ||
+		(([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSSet class]] || [value isKindOfClass:[NSOrderedSet class]]) && [value count] < 1) ||
 		([value isKindOfClass:[NSString class]] && [value length] < 1)
 	);
 }
