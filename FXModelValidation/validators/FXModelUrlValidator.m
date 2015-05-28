@@ -51,7 +51,7 @@
 															options:NSRegularExpressionCaseInsensitive
 															  error:nil];
 
-		NSTextCheckingResult *match = [regExp firstMatchInString:value options:0 range:NSMakeRange(0, [value length])];
+		NSTextCheckingResult *match = [regExp firstMatchInString:value options:0 range:NSMakeRange(0, (unsigned long)[value performSelector:@selector(length)])];
 
 		if(match.numberOfRanges)
 			return nil;
