@@ -127,40 +127,43 @@ NSString *const FXModelValidatorWhen = @"when";
 }
 
 -(NSArray *)attributeList {
-	@synchronized (self) {
-		NSArray *attributes = (NSArray *)objc_getAssociatedObject(self, @selector(attributes));
-
-		if(attributes)
-			return attributes;
-
-		//get FXModel properties
-		NSMutableSet *ignoreProperties = [NSMutableSet set];
-		unsigned int propertyCount;
-		objc_property_t *propertyList = class_copyPropertyList([FXModelWrapper class], &propertyCount);
-		for (unsigned int i = 0; i < propertyCount; i++) {
-			objc_property_t property = propertyList[i];
-			const char *propertyName = property_getName(property);
-			[ignoreProperties addObject:@(propertyName)];
-		}
-		free(propertyList);
-
-		//get self properties
-		Class className = (([NSStringFromClass([self class]) containsString:@"-#FXModel#-"]) ? [self superclass] : [self class]);
-		propertyList = class_copyPropertyList(className, &propertyCount);
-		NSMutableSet *selfProperties = [NSMutableSet set];
-		for (unsigned int i = 0; i < propertyCount; i++) {
-			objc_property_t property = propertyList[i];
-			const char *propName = property_getName(property);
-			[selfProperties addObject:@(propName)];
-		}
-
-		free(propertyList);
-
-		[selfProperties minusSet:ignoreProperties];
-		attributes = [selfProperties allObjects];
-		objc_setAssociatedObject(self, @selector(attributes), attributes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-		return attributes;
-	}
+    @synchronized (self) {
+        NSArray *attributes = (NSArray *)objc_getAssociatedObject(self, @selector(attributes));
+        
+        if(attributes)
+            return attributes;
+        
+        //get FXModel properties
+        NSMutableSet *ignoreProperties = [NSMutableSet set];
+        unsigned int propertyCount;
+        objc_property_t *propertyList = class_copyPropertyList([FXModelWrapper class], &propertyCount);
+        for (unsigned int i = 0; i < propertyCount; i++) {
+            objc_property_t property = propertyList[i];
+            const char *propertyName = property_getName(property);
+            [ignoreProperties addObject:@(propertyName)];
+        }
+        free(propertyList);
+        
+        //get self properties
+        Class className = (([NSStringFromClass([self class]) containsString:@"-#FXModel#-"]) ? [self superclass] : [self class]);
+        propertyList = class_copyPropertyList(className, &propertyCount);
+        
+        NSMutableArray *selfProperties = [NSMutableArray array];
+        for (unsigned int i = 0; i < propertyCount; i++) {
+            objc_property_t property = propertyList[i];
+            const char *propName = property_getName(property);
+            
+            if (![ignoreProperties containsObject:@(propName)]) {
+                [selfProperties addObject:@(propName)];
+            }
+        }
+        
+        free(propertyList);
+        
+        attributes = [selfProperties copy];
+        objc_setAssociatedObject(self, @selector(attributes), attributes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        return attributes;
+    }
 }
 
 -(BOOL)validate {
