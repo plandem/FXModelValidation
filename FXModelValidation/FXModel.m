@@ -145,7 +145,15 @@ NSString *const FXModelValidatorWhen = @"when";
         free(propertyList);
         
         //get self properties
-        Class className = (([NSStringFromClass([self class]) containsString:@"-#FXModel#-"]) ? [self superclass] : [self class]);
+        BOOL matched;
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1) {
+            // Load resources for iOS 7.1 or earlier
+            matched = [NSStringFromClass([self class]) rangeOfString:@"-#FXModel#-"].location != NSNotFound;
+        } else {
+            // Load resources for iOS 8 or later
+            matched = ([NSStringFromClass([self class]) containsString:@"-#FXModel#-"]);
+        }
+        Class className = (matched ? [self superclass] : [self class]);
         propertyList = class_copyPropertyList(className, &propertyCount);
         
         NSMutableArray *selfProperties = [NSMutableArray array];
