@@ -173,7 +173,7 @@ NSString *const FXModelValidatorWhen = @"when";
 
 -(BOOL)validate:(NSArray *)attributes clearErrors:(BOOL)clearErrors {
 	if(clearErrors)
-		[self clearErrors:nil];
+		[self clearErrors:attributes];
 
 	if([self beforeValidate]) {
 		NSDictionary *scenarios = [self scenarioList];
@@ -353,19 +353,25 @@ NSString *const FXModelValidatorWhen = @"when";
 	[self clearErrors:nil];
 }
 
--(void)clearErrors:(NSString *)attribute {
+-(void)clearErrors:(id)attribute {
+	NSMutableDictionary *errors = [self getValidationErrors];
+	NSUInteger errorsBefore = [errors count];
+
 	if(attribute == nil) {
-		if([[self getValidationErrors] count]) {
-			[self willChangeValueForKey:@"errors"];
-			[self willChangeValueForKey:@"hasErrors"];
-			[[self getValidationErrors] removeAllObjects];
-			[self didChangeValueForKey:@"errors"];
-			[self didChangeValueForKey:@"hasErrors"];
+		[[self getValidationErrors] removeAllObjects];
+	} else if([attribute isKindOfClass:[NSString class]] && [self getValidationErrors][(NSString *)attribute]) {
+		[[self getValidationErrors] removeObjectForKey:attribute];
+	} else if([attribute isKindOfClass:[NSArray class]]) {
+		for(NSString *name in (NSArray *)attribute) {
+			if(errors[name]) {
+				[errors removeObjectForKey:name];
+			}
 		}
-	} else if([self getValidationErrors][attribute]) {
+	}
+
+	if(errorsBefore != [errors count]) {
 		[self willChangeValueForKey:@"errors"];
 		[self willChangeValueForKey:@"hasErrors"];
-		[[self getValidationErrors] removeObjectForKey:attribute];
 		[self didChangeValueForKey:@"errors"];
 		[self didChangeValueForKey:@"hasErrors"];
 	}

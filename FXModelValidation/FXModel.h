@@ -245,10 +245,10 @@ FOUNDATION_EXPORT NSString *const FXModelValidatorSet;
 -(void)addError:(NSString *)attribute message:(NSString *)message;
 
 /**
-* Removes errors for all attributes or a single attribute.
-* @param attribute attribute name. Use nil to remove errors for all attribute.
+* Removes errors for all attributes, array of attributes or a single attribute.
+* @param attribute attribute name or array of names. Use nil to remove errors for all attribute.
 */
--(void)clearErrors:(NSString *)attribute;
+-(void)clearErrors:(id)attribute;
 
 /**
 * @see clearErrors:
