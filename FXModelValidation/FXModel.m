@@ -145,7 +145,7 @@ NSString *const FXModelValidatorWhen = @"when";
 		free(propertyList);
 
 		//get self properties
-		Class className = (([NSStringFromClass([self class]) containsString:@"-#FXModel#-"]) ? [self superclass] : [self class]);
+		Class className = (([NSStringFromClass([self class]) rangeOfString:@"-#FXModel#-"].location != NSNotFound) ? [self superclass] : [self class]);
 		propertyList = class_copyPropertyList(className, &propertyCount);
 		NSMutableSet *selfProperties = [NSMutableSet set];
 		for (unsigned int i = 0; i < propertyCount; i++) {
