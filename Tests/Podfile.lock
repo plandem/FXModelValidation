@@ -1,7 +1,7 @@
 PODS:
-  - Expecta (0.3.1)
+  - Expecta (0.3.2)
   - NSURL+IDN (0.3)
-  - OCHamcrest (4.0.1)
+  - OCHamcrest (4.1.1)
   - OCMockito (1.3.1):
     - OCHamcrest (~> 4.0)
   - Specta (0.2.1)
@@ -13,10 +13,10 @@ DEPENDENCIES:
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  NSURL+IDN: acf82a7fa47a8e2c8b644778e3efe7a56bd66aa8
-  OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
-  OCMockito: 57b8c4bb54ff3a4a14eb2174f9e57faf9f56efb6
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  Expecta: 8c507baf13211207b1e9d0a741480600e6b4ed15
+  NSURL+IDN: 82355a0afd532fe1de08f6417c134b49b1a1c4b3
+  OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
+  OCMockito: 958f33ee8ad03eeb62e1397ef6b60f5121214ca4
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.37.2

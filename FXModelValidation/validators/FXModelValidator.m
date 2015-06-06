@@ -5,6 +5,7 @@
 
 #import "FXModelValidation.h"
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 NSString *const FXFormValidatorErrorDomain = @"FXFormValidation";
 NSString *const FXFormInlineValidatorAction = @"action";
@@ -94,11 +95,28 @@ static NSDictionary *FXFormBuiltInValidators;
 	if(_isEmpty)
 		return _isEmpty(value);
 
-	return  (
-		value == nil || [value isKindOfClass:[NSNull class]] ||
-		(([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSSet class]] || [value isKindOfClass:[NSOrderedSet class]]) && [value count] < 1) ||
-		([value isKindOfClass:[NSString class]] && [value length] < 1)
-	);
+	NSUInteger (*callback)(id, SEL) = (NSUInteger (*)(id, SEL))objc_msgSend;
+
+	if(value == nil || [value isKindOfClass:[NSNull class]]) {
+		return YES;
+	}
+
+	if([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSSet class]] || [value isKindOfClass:[NSOrderedSet class]]) {
+		return callback(value, @selector(count)) < 1;
+	}
+
+	if([value isKindOfClass:[NSString class]]) {
+		return callback(value, @selector(length)) < 1;
+	}
+
+	return NO;
+
+//	TODO: find way to reproduce cases when this will be failed with ARC (wrong casting for id and method can't be called)
+//	return  (
+//		value == nil || [value isKindOfClass:[NSNull class]] ||
+//		(([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSSet class]] || [value isKindOfClass:[NSOrderedSet class]]) && [value count] < 1) ||
+//		([value isKindOfClass:[NSString class]] && [value length] < 1)
+//	);
 }
 
 +(FXModelValidator *)createValidator:(id)type model:(id)model attributes:(NSArray *)attributes params:(NSDictionary *)params {

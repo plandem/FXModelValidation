@@ -414,7 +414,7 @@ NSString *const FXModelValidatorWhen = @"when";
 
 -(void)onUnsafeAttribute:(NSString *)attribute value:(id)value {
 #if DEBUG
-	NSLog(@"Failed to set unsafe attribute '%@' in %@", attribute, [self class]);
+	NSLog(@"Failed to set unsafe attribute '%@' in %@", attribute, [self superclass]);
 #endif
 }
 
