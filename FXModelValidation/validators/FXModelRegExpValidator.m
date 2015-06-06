@@ -39,7 +39,7 @@
 	BOOL matched = _not;
 
 	if([value isKindOfClass:[NSString class]]) {
-		NSTextCheckingResult *match = [_regExp firstMatchInString:value options:0 range:NSMakeRange(0, [value length])];
+		NSTextCheckingResult *match = [_regExp firstMatchInString:value options:0 range:NSMakeRange(0, (unsigned long)[value performSelector:@selector(length)])];
 		matched = (match.numberOfRanges > 0);
 	}
 

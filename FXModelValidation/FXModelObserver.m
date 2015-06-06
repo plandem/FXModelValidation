@@ -74,7 +74,7 @@
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-	[(id<FXModel>)_model clearErrors:keyPath];
-	[(id<FXModel>)_model validate:@[keyPath]];
+	[(id<FXModel>)_model clearErrors];
+	[(id<FXModel>)_model validate];
 }
 @end
