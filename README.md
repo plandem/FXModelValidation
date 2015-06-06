@@ -54,7 +54,7 @@ Probably, best way is to override init method of class:
 	if((self = [super init])) {
 		static dispatch_once_t onceToken;
 		dispatch_once(&onceToken, ^{
-			[[self class] validationInit]
+			[[self class] validationInit];
 		});
 	}
 
