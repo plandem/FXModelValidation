@@ -358,9 +358,9 @@ NSString *const FXModelValidatorWhen = @"when";
 	NSUInteger errorsBefore = [errors count];
 
 	if(attribute == nil) {
-		[[self getValidationErrors] removeAllObjects];
-	} else if([attribute isKindOfClass:[NSString class]] && [self getValidationErrors][(NSString *)attribute]) {
-		[[self getValidationErrors] removeObjectForKey:attribute];
+		[errors removeAllObjects];
+	} else if([attribute isKindOfClass:[NSString class]] && errors[(NSString *)attribute]) {
+		[errors removeObjectForKey:attribute];
 	} else if([attribute isKindOfClass:[NSArray class]]) {
 		for(NSString *name in (NSArray *)attribute) {
 			if(errors[name]) {
