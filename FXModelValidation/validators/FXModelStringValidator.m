@@ -3,6 +3,7 @@
 // Copyright (c) 2014 Andrey Gayvoronsky. All rights reserved.
 //
 
+#import <objc/message.h>
 #import "FXModelStringValidator.h"
 
 typedef NS_OPTIONS(NSUInteger, FXFormStringValidatorComporatorID) {
