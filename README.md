@@ -255,7 +255,7 @@ if(model.hasErrors) {
 
 model.password = @"password123";
 if(!(model.hasErrors)) {
-	//validation succeded now.
+	//validation succeeded now.
 }
 
 ```
